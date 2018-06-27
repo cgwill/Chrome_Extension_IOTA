@@ -7,6 +7,11 @@ let btn = document.createElement("BUTTON");
 btn.innerHTML = "IOTA Tip";
 topRow.appendChild(btn);
 
+// Create the Event when the button is clicked
+btn.addEventListener("click", function(){
+  alert("button was clicked");
+});
+
 // Get the description of the video
 let description = document.getElementById("description").innerHTML;
 //console.log(description);
