@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/cgwill/Chrome_Extension_IOTA/issues"
   },
-  "homepage": "https://github.com/cgwill/Chrome_Extension_IOTA#readme"
+  "homepage": "https://github.com/cgwill/Chrome_Extension_IOTA#readme",
+  "dependencies": {
+    "iota.lib.js": "^0.4.7"
+  }
 }
