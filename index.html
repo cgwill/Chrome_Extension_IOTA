@@ -12,9 +12,33 @@
     } else {
         console.log(success);
     }
-});
+  });
 
-  console.log(iota);
+  let seed = "VMGBBXOOX9PACPGJXUAWOQJSRA9XIAEHFHZPIZ9ZLB9OHTLLEL9CPTQSZJHZBDIVJEXXYZC9GRUMWLBDG";
+
+  iota.api.getNewAddress(seed, function(err, res){
+    if(!err){
+      console.log(res);
+    } else {
+      console.log(err);
+    }
+  });
+
+  let sendAddress = "EPOZCRHFAVLUVJQMGGSW9A9IANBEADEXZZBMTEPSMKVNCMUTRIEIHBQ9YVBWSBSHUAWGPKRGMLHQSJIID";
+
+  // Compose the Message
+  let messageTag = "FIRSTNULLTRANS";
+  let messageToSend = "You have tipped this user!!";
+  let messageTrytes = iota.utils.toTrytes(messageToSend);
+
+  // Compose the Transfer
+  let transfer = [{ "address" : sendAddress,
+                    "value": 0,
+                    "message" : messageTrytes,
+                    "tag": messageTag}];
+
+  iota.api.sendTransfer(seed, 4, 14, transfer, function(err, res) {if(!err){console.log(res);}else {console.log(err);}});
+
   </script>
 </head>
 <body>
