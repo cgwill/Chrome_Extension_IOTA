@@ -1,0 +1,24 @@
+{
+  "name": "chrome_extension_iota",
+  "version": "1.0.0",
+  "description": "You can Tip an Youtube Video with Iota",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgwill/Chrome_Extension_IOTA.git"
+  },
+  "keywords": [
+    "IOTA",
+    "Youtube",
+    "Testproject"
+  ],
+  "author": "Wilfried Gruber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cgwill/Chrome_Extension_IOTA/issues"
+  },
+  "homepage": "https://github.com/cgwill/Chrome_Extension_IOTA#readme"
+}
