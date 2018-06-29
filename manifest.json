@@ -1,7 +1,7 @@
 {
-  "manifest_version": 1.0,
+  "manifest_version": 2,
   "name": "Youtube IOTA Tip",
-  "version": "0.001",
+  "version": "1",
   "content_scripts": [
     {
       "matches": [
