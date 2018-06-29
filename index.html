@@ -1,10 +1,24 @@
 <html>
 <head>
   <script src="node_modules/iota.lib.js/dist/iota.js"></script>
+  <script src="curl.lib.js/dist/curl.lib.js"></script>
   <script>
   var iota = new IOTA({
       'provider': 'https://node.iotanode.host:443'
   });
+
+  var curl = window.curl;
+  // Make the PoW with curl.lib.js in browser
+
+  try {
+    curl.init();
+    curl.overrideAttachToTangle(iota);
+    console.log("overrideAttachToTangle was successfull");
+  } catch (err){
+    console.error("Error", err);
+  }
+
+  ///////////////////////////////////////////
 
   iota.api.getNodeInfo(function(error, success) {
     if (error) {

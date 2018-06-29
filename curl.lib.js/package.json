@@ -1,0 +1,52 @@
+{
+    "name": "curl.lib.js",
+    "version": "1.0.22",
+    "description": "WebGL2 Accelerated IOTA Proof of Work",
+    "main": "dist/curl.lib.js",
+    "directories": {
+        "example": "example",
+        "lib": "lib"
+    },
+    "dependencies": {
+        "iota.crypto.js": "^0.4.2"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.0",
+        "chai": "^4.1.2",
+        "cross-env": "^5.1.6",
+        "eslint": "^4.19.1",
+        "gulp": "^3.9.1",
+        "gulp-eslint": "^4.0.2",
+        "gulp-mocha": "6.0.0",
+        "gulp-nsp": "^3.0.1",
+        "gulp-util": "^3.0.8",
+        "loader-utils": "^1.1.0",
+        "mocha": "^5.2.0",
+        "webpack": "^4.8.3",
+        "webpack-cli": "^2.1.4",
+        "webpack-dev-server": "^3.1.4",
+        "webpack-stream": "^4.0.3"
+    },
+    "scripts": {
+        "test": "gulp --harmony test",
+        "dev": "webpack-dev-server",
+        "build": "webpack",
+        "dist": "cross-env NODE_ENV=production webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iotaledger/curl.lib.js.git"
+    },
+    "keywords": [
+        "iota",
+        "webgl2"
+    ],
+    "author": "Paul Handy (paul@pauldhandy.com)",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/iotaledger/curl.lib.js/issues"
+    },
+    "homepage": "https://github.com/iotaledger/curl.lib.js#readme"
+}
