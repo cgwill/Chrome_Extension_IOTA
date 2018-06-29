@@ -3,6 +3,7 @@
   <script src="node_modules/iota.lib.js/dist/iota.js"></script>
   <script src="curl.lib.js/dist/curl.lib.js"></script>
   <script>
+  /*
   var iota = new IOTA({
       'provider': 'https://node.iotanode.host:443'
   });
@@ -42,7 +43,7 @@
 
   // Compose the Message
   let messageTag = "FIRSTNULLTRANS";
-  let messageToSend = "You have tipped this user!!";
+  let messageToSend = "You have tipped this user again!!";
   let messageTrytes = iota.utils.toTrytes(messageToSend);
 
   // Compose the Transfer
@@ -51,8 +52,10 @@
                     "message" : messageTrytes,
                     "tag": messageTag}];
 
-  iota.api.sendTransfer(seed, 4, 14, transfer, function(err, res) {if(!err){console.log(res);}else {console.log(err);}});
 
+  // Send the transfer
+  iota.api.sendTransfer(seed, 4, 14, transfer, function(err, res) {if(!err){console.log(res);}else {console.log(err);}});
+  */
   </script>
 </head>
 <body>
